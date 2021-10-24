@@ -3,13 +3,15 @@
 
 int main()
 {
-    int N=10;
-    int i,j;
-    for(i=1;i<=N;i++)
+    int i,j,N;
+    printf("Entrer le nombre N:");
+    scanf("%d",&N);
+
+    for(i=0;i<=N;i++)
     {
-        for(j=1;j<=N;j++)
+        for(j=0;j<=N;j++)
         {
-            printf(" %d ;",i*j);
+            printf(" %d*%d=%d |",i,j,i*j);
         }
         printf("\n");
     }
